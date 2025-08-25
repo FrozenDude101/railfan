@@ -11,5 +11,5 @@ The backend.
 
 ```bash
 poetry install;
-poetry run python fastapi dev ./src/api/main.py
+poetry run fastapi dev ./src/api/main.py
 ```
