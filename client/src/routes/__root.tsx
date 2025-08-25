@@ -6,7 +6,7 @@ import { TanstackDevtools } from '@tanstack/react-devtools';
 export const Route = createRootRoute({
     component: () => (
         <>
-            <Outlet />
+            <Outlet/>
             <TanstackDevtools
                 config={{
                     position: 'bottom-left',
@@ -14,7 +14,7 @@ export const Route = createRootRoute({
                 plugins={[
                     {
                         name: 'Tanstack Router',
-                        render: <TanStackRouterDevtoolsPanel />,
+                        render: <TanStackRouterDevtoolsPanel/>,
                     },
                 ]}
             />

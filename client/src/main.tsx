@@ -33,8 +33,8 @@ if (rootElement && !rootElement.innerHTML) {
     root.render(
         <StrictMode>
             <QueryClientProvider client={ new QueryClient() }>
-                <RouterProvider router={router} />
-                <ReactQueryDevtools buttonPosition="bottom-right" />
+                <RouterProvider router={ router }/>
+                <ReactQueryDevtools buttonPosition="bottom-right"/>
             </QueryClientProvider>
         </StrictMode>,
     );
