@@ -1,14 +1,16 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from sqlmodel import create_engine, StaticPool
+from sqlmodel import create_engine, StaticPool, SQLModel
 
-from api.routes import StationRouter
-from api.db import StationController
+from api.testData import loadTestData
+
+import os
+os.remove("test.db")
 
 engine = create_engine(
-    "sqlite://",
-    connect_args={'check_same_thread':False},
-    poolclass=StaticPool
+    url = "sqlite:///test.db",
+    connect_args = { 'check_same_thread': False },
+    poolclass = StaticPool,
 )
 
 app = FastAPI()
@@ -23,5 +25,6 @@ app.add_middleware(
     allow_headers = ["*"],
 )
 
-app.include_router(StationRouter(StationController(engine)).router)
+SQLModel.metadata.create_all(engine)
 
+loadTestData(engine)
