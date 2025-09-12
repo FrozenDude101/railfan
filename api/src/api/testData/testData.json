@@ -1,6 +1,52 @@
 {
+    "$schema": "./testDataSchema.json",
     "stations": [
-        { "name": "Edgbaston Village", "osmNodes": [ 9097748893, 3785139625, 11036222708 ] },
-        { "name": "Five Ways", "osmNodes": [ 11036222709, 9097748900, 9097748899 ] }
+        { "name": "Edgbaston Village", "nodes": [ 9097748893, 3785139625, 11036222708 ] },
+        { "name": "Five Ways", "nodes": [ 11036222709, 9097748900, 9097748899 ] },
+        { "name": "Brindley Place", "nodes": [ 3785139604, 12350891476, 9097748901 ] },
+        { "name": "Library", "nodes": [ 11036222711, 6990613929, 6990613930 ] },
+        { "name": "Town Hall", "nodes": [ 11036222712, 8064476589, 6957345553 ] },
+        { "name": "Grand Central", "nodes": [ 4204911706, 3616332640, 11036222713 ] }
+    ],
+    "legs": [
+        {
+            "ways": [ 1318524830, 695835581, 375125198, 1083783324, 695835580, 1318524832, 1083783325, 1083783326, 1208255913, 1208255912 ],
+            "partialWays": [
+                { "osmWayId": 983895524, "fromNodeId": 9097748900, "toNodeId": 9097769232 },
+                { "osmWayId": 983895526, "fromNodeId": 9097769232, "toNodeId": 9097748899 }
+            ]
+        },
+        {
+            "partialWays": [
+                { "osmWayId": 983895526, "fromNodeId": 9097748899, "toNodeId": 9097748901 },
+                { "osmWayId": 983895526, "fromNodeId": 3785139604, "toNodeId": 9097748900 }
+            ]
+        },
+        {
+            "ways": [ 1002009371, 983895518, 1354628521, 983895517, 1002009372, 983895516, 983895525 ],
+            "partialWays": [
+                { "osmWayId": 983895526, "fromNodeId": 9097748901, "toNodeId": 9097769261 },
+                { "osmWayId": 743274331, "fromNodeId": 6957345537, "toNodeId": 6990613930 },
+                { "osmWayId": 477691478, "fromNodeId": 3785139604, "toNodeId": 3785139603 },
+                { "osmWayId": 375125197, "fromNodeId": 3785139596, "toNodeId": 6990613929 }
+            ]
+        },
+        {
+            "ways": [ 746999958, 746999957 ],
+            "partialWays": [
+                { "osmWayId": 743274331, "fromNodeId": 6990613930, "toNodeId": 6957345553 },
+                { "osmWayId": 375125197, "fromNodeId": 3785139574, "toNodeId": 6990613929 },
+                { "osmWayId": 844349473, "fromNodeId": 8064476589, "toNodeId": 3785139574 }
+            ]
+        },
+        {
+            "ways": [ 533145511, 375125196, 843178530 ],
+            "partialWays": [
+                { "osmWayId": 844349473, "fromNodeId": 3785139569, "toNodeId": 8064476589 },
+                { "osmWayId": 384805841, "fromNodeId": 3616332640, "toNodeId": 3785138752 },
+                { "osmWayId": 743274331, "fromNodeId": 6957345553, "toNodeId": 6957345555 },
+                { "osmWayId": 378433438, "fromNodeId": 3754517409, "toNodeId": 4204911706 }
+            ]
+        }
     ]
 }

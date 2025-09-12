@@ -7,10 +7,11 @@ from api.testData import loadTestData
 import os
 os.remove("test.db")
 
+
 engine = create_engine(
     url = "sqlite:///test.db",
     connect_args = { 'check_same_thread': False },
-    poolclass = StaticPool,
+    poolclass = StaticPool
 )
 
 app = FastAPI()

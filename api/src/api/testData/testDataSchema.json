@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+
+    "properties": {
+
+        "stations": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "nodes": {
+                        "type": "array",
+                        "items": {
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "required": [ "name", "nodes" ]
+            }
+        },
+
+        "legs": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "ways": {
+                        "type": "array",
+                        "items": {
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    },
+                    "partialWays": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "osmWayId": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "fromNodeId": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "toNodeId": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                }
+                            },
+                            "required": [ "osmWayId", "fromNodeId", "toNodeId" ]
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
