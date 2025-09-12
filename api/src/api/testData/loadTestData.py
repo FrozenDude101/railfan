@@ -2,7 +2,7 @@ import json
 from sqlalchemy import Engine
 from sqlmodel import Session
 
-from api.db.models import Station, StationNode, Leg, LegPartialWay, LegWay
+from api.db.models import Station, StationNode, Leg, LegPartialWay, LegWay, StockClass, Stock, Operator
 from api.testData import TestData
 
 
@@ -20,8 +20,6 @@ def loadTestData(engine: Engine) -> None:
             for nodeData in stationData.nodes:
                 session.add(StationNode(osmNodeId = nodeData.osmNodeId, stationId = station.id))
 
-        session.commit()
-
         for legData in testData.legs:
             leg = Leg()
             session.add(leg)
@@ -35,5 +33,17 @@ def loadTestData(engine: Engine) -> None:
                     fromNodeId = partialWayData.fromNodeId,
                     toNodeId = partialWayData.toNodeId,
                     legId = leg.id))
+
+        stockClasses: dict[str, StockClass] = {}
+        for stockClassData in testData.stockClasses:
+            stockClasses[stockClassData.name] = StockClass(name = stockClassData.name)
+            session.add(stockClasses[stockClassData.name])
+
+        for operatorData in testData.operators:
+            operator = Operator(name = operatorData.name)
+            session.add(operator)
+
+            for stockData in operatorData.stock:
+                session.add(Stock(unitNumber = stockData.unitNumber, stockClassId = stockClasses[stockData.stockClass].id, operatorId = operator.id))
                 
         session.commit()

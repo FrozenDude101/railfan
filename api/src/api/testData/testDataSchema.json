@@ -1,12 +1,14 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
 
+    "required": [ "stations", "legs", "stockClasses" ],
     "properties": {
 
         "stations": {
             "type": "array",
             "items": {
                 "type": "object",
+                "required": [ "name", "nodes" ],
                 "properties": {
                     "name": {
                         "type": "string"
@@ -18,8 +20,7 @@
                             "minimum": 0
                         }
                     }
-                },
-                "required": [ "name", "nodes" ]
+                }
             }
         },
 
@@ -39,6 +40,7 @@
                         "type": "array",
                         "items": {
                             "type": "object",
+                            "required": [ "osmWayId", "fromNodeId", "toNodeId" ],
                             "properties": {
                                 "osmWayId": {
                                     "type": "integer",
@@ -52,13 +54,52 @@
                                     "type": "integer",
                                     "minimum": 0
                                 }
-                            },
-                            "required": [ "osmWayId", "fromNodeId", "toNodeId" ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "stockClasses": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [ "name" ],
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+
+        "operators": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [ "name", "stock" ],
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "stock": {
+                        "type": "array",
+                        "items": {
+                            "required": [ "stockClass", "unitNumber" ],
+                            "properties": {
+                                "stockClass": {
+                                    "type": "string"
+                                },
+                                "unitNumber": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                }
+                            }
                         }
                     }
                 }
             }
         }
-
     }
 }

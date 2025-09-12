@@ -1,5 +1,6 @@
 {
     "$schema": "./testDataSchema.json",
+
     "stations": [
         { "name": "Edgbaston Village", "nodes": [ 9097748893, 3785139625, 11036222708 ] },
         { "name": "Five Ways", "nodes": [ 11036222709, 9097748900, 9097748899 ] },
@@ -8,6 +9,7 @@
         { "name": "Town Hall", "nodes": [ 11036222712, 8064476589, 6957345553 ] },
         { "name": "Grand Central", "nodes": [ 4204911706, 3616332640, 11036222713 ] }
     ],
+
     "legs": [
         {
             "ways": [ 1318524830, 695835581, 375125198, 1083783324, 695835580, 1318524832, 1083783325, 1083783326, 1208255913, 1208255912 ],
@@ -46,6 +48,60 @@
                 { "osmWayId": 384805841, "fromNodeId": 3616332640, "toNodeId": 3785138752 },
                 { "osmWayId": 743274331, "fromNodeId": 6957345553, "toNodeId": 6957345555 },
                 { "osmWayId": 378433438, "fromNodeId": 3754517409, "toNodeId": 4204911706 }
+            ]
+        }
+    ],
+
+    "stockClasses": [
+        { "name": "CAF Urbos 3" }
+    ],
+
+    "operators": [
+        {
+            "name": "West Midlands Metro",
+            "stock": [
+                { "stockClass": "CAF Urbos 3", "unitNumber": 17 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 18 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 19 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 20 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 21 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 22 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 23 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 24 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 25 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 26 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 27 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 28 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 29 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 30 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 31 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 32 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 33 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 34 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 35 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 36 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 37 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 38 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 39 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 40 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 41 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 42 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 43 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 44 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 45 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 46 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 47 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 48 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 49 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 50 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 51 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 52 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 53 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 54 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 55 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 56 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 57 },
+                { "stockClass": "CAF Urbos 3", "unitNumber": 58 }
             ]
         }
     ]
