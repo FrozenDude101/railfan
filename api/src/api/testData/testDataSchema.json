@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
 
-    "required": [ "stations", "legs", "stockClasses" ],
+    "required": [ "stations", "legs", "stockClasses", "operators", "users" ],
     "properties": {
 
         "stations": {
@@ -132,6 +132,56 @@
                                     "items": {
                                         "type": "integer"
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "stockClasses": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [ "ref", "name" ],
+                "properties": {
+                    "ref": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+
+        "users": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [ "name" ],
+                "properties": {
+                    "displayName": {
+                        "type": "string"
+                    },
+                    "journeys": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "required": [ "stockRef", "routeRef" ],
+                            "properties": {
+                                "stockRef": {
+                                    "type": "integer"
+                                },
+                                "routeRef": {
+                                    "type": "integer"
+                                },
+                                "fromStationRef": {
+                                    "type": "integer"
+                                },
+                                "toStationRef": {
+                                    "type": "integer"
                                 }
                             }
                         }

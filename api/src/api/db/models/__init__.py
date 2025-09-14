@@ -12,3 +12,6 @@ from .Operator import Operator
 from .RouteStation import RouteStation
 from .RouteLeg import RouteLeg
 from .Route import Route
+
+from .UserJourney import UserJourney
+from .User import User

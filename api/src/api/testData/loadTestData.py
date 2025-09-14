@@ -2,7 +2,7 @@ import json
 from sqlalchemy import Engine
 from sqlmodel import Session
 
-from api.db.models import Station, StationNode, Leg, LegPartialWay, LegWay, StockClass, Stock, Operator, Route, RouteLeg, RouteStation
+from api.db.models import Station, StationNode, Leg, LegPartialWay, LegWay, StockClass, Stock, Operator, Route, RouteLeg, RouteStation, User, UserJourney
 from api.testData import TestData
 
 
@@ -16,6 +16,8 @@ def loadTestData(engine: Engine) -> None:
         stations: dict[int, Station] = {}
         legs: dict[int, Leg] = {}
         stockClasses: dict[int, StockClass] = {}
+        stock: dict[int, Stock] = {}
+        routes: dict[int, Route] = {}
 
         for stationData in testData.stations:
             stations[stationData.ref] = Station(name = stationData.name)
@@ -47,16 +49,29 @@ def loadTestData(engine: Engine) -> None:
             session.add(operator)
 
             for stockData in operatorData.stock:
-                session.add(Stock(unitNumber = stockData.unitNumber, stockClassId = stockClasses[stockData.stockClassRef].id, operatorId = operator.id))
+                stock[stockData.ref] = Stock(unitNumber = stockData.unitNumber, stockClassId = stockClasses[stockData.stockClassRef].id, operatorId = operator.id)
+                session.add(stock[stockData.ref])
 
             for routeData in operatorData.routes:
-                route = Route(name = routeData.name, operatorId = operator.id)
-                session.add(route)
+                routes[routeData.ref] = Route(name = routeData.name, operatorId = operator.id)
+                session.add(routes[routeData.ref])
 
                 for index, routeStationRef in enumerate(routeData.stationRefs):
-                    session.add(RouteStation(index = index, routeId = route.id, stationId = stations[routeStationRef].id))
+                    session.add(RouteStation(index = index, routeId = routes[routeData.ref].id, stationId = stations[routeStationRef].id))
 
                 for index, routeLegRef in enumerate(routeData.legRefs):
-                    session.add(RouteLeg(index = index, routeId = route.id, legId = legs[routeLegRef].id))
+                    session.add(RouteLeg(index = index, routeId = routes[routeData.ref].id, legId = legs[routeLegRef].id))
+
+        for userData in testData.users:
+            user = User(displayName = userData.displayName)
+            session.add(user)
+
+            for journeyData in userData.journeys:
+                session.add(UserJourney(
+                    stockId = stock[journeyData.stockRef].id,
+                    routeId = routes[journeyData.routeRef].id,
+                    fromStationId = stations[journeyData.fromStationRef].id,
+                    toStationId = stations[journeyData.toStationRef].id,
+                    userId = user.id))
                 
         session.commit()
