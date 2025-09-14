@@ -2,42 +2,43 @@
     "$schema": "./testDataSchema.json",
 
     "stations": [
-        { "name": "Edgbaston Village", "nodes": [ 9097748893, 3785139625, 11036222708 ] },
-        { "name": "Five Ways", "nodes": [ 11036222709, 9097748900, 9097748899 ] },
-        { "name": "Brindley Place", "nodes": [ 3785139604, 12350891476, 9097748901 ] },
-        { "name": "Library", "nodes": [ 11036222711, 6990613929, 6990613930 ] },
-        { "name": "Town Hall", "nodes": [ 11036222712, 8064476589, 6957345553 ] },
-        { "name": "Grand Central", "nodes": [ 4204911706, 3616332640, 11036222713 ] },
-        { "name": "Corporation Street", "nodes": [ 3464500416, 4216185185 ] },
-        { "name": "Bull Street", "nodes": [ 11036222714, 4207929470, 4207929471 ] },
-        { "name": "St. Chads", "nodes": [ 4207951089, 4207951090, 11036222715 ] },
-        { "name": "St. Paul's", "nodes": [ 4653096476, 246561591 ] },
-        { "name": "Jewellery Quarter", "nodes": [ 187104817, 1828015273 ] },
-        { "name": "Soho, Benson Road", "nodes": [ 5244863942, 280417281 ] },
-        { "name": "Winson Green, Outer Circle", "nodes": [ 280417278, 1829108248 ] },
-        { "name": "Handsworth, Booth Street", "nodes": [ 5244863945, 20984528 ] },
-        { "name": "The Hawthorns", "nodes": [ 1829143232, 280417275 ] },
-        { "name": "Kenrick Park", "nodes": [ 8064476296, 280417276 ] },
-        { "name": "Trinity Way", "nodes": [ 1829143091, 8064476292, 280417273 ] },
-        { "name": "West Bromwich Central", "nodes": [ 8064476291, 280417271 ] },
-        { "name": "Lodge Road, West Bromwich Town Hall", "nodes": [ 8064476290, 8064476586, 280417269 ] },
-        { "name": "Dartmouth Street", "nodes": [ 8064476391, 4891144322, 280417268 ] },
-        { "name": "Dudley Street, Guns Village", "nodes": [ 1829143044, 8064476295, 280417267 ] },
-        { "name": "Black Lake", "nodes": [ 8064476289, 8064476585, 280417266 ] },
-        { "name": "Wednesbury, Great Western Street", "nodes": [ 280417262, 8064476288, 8064476485 ] },
-        { "name": "Wednesbury Parkway", "nodes": [ 8064476386, 8064476287, 280156260 ] },
-        { "name": "Bradley Lane", "nodes": [ 4099974348, 8064476385, 249663901 ] },
-        { "name": "Loxdale", "nodes": [ 4100046723, 8064476297, 2731786423 ] },
-        { "name": "Bilston Central", "nodes": [ 8064476286, 251064972, 1827884127 ] },
-        { "name": "The Crescent", "nodes": [ 8064476285, 260114060, 1780524952 ] },
-        { "name": "Priestfield", "nodes": [ 8064476389, 280417283, 8064476588 ] },
-        { "name": "The Royal", "nodes": [ 1829957703, 247763046, 1780524782 ] },
-        { "name": "Pipers Row", "nodes": [ 11193824565, 11193824566, 1780524952 ] },
-        { "name": "Wolverhampton Station", "nodes": [ 11193824562, 260114060, 1780524952 ] }
+        { "ref": 1, "name": "Edgbaston Village", "nodes": [ 9097748893, 3785139625, 11036222708 ] },
+        { "ref": 2, "name": "Five Ways", "nodes": [ 11036222709, 9097748900, 9097748899 ] },
+        { "ref": 3, "name": "Brindley Place", "nodes": [ 3785139604, 12350891476, 9097748901 ] },
+        { "ref": 4, "name": "Library", "nodes": [ 11036222711, 6990613929, 6990613930 ] },
+        { "ref": 5, "name": "Town Hall", "nodes": [ 11036222712, 8064476589, 6957345553 ] },
+        { "ref": 6, "name": "Grand Central", "nodes": [ 4204911706, 3616332640, 11036222713 ] },
+        { "ref": 7, "name": "Corporation Street", "nodes": [ 3464500416, 4216185185 ] },
+        { "ref": 8, "name": "Bull Street", "nodes": [ 11036222714, 4207929470, 4207929471 ] },
+        { "ref": 9, "name": "St. Chads", "nodes": [ 4207951089, 4207951090, 11036222715 ] },
+        { "ref": 10, "name": "St. Paul's", "nodes": [ 4653096476, 246561591 ] },
+        { "ref": 11, "name": "Jewellery Quarter", "nodes": [ 187104817, 1828015273 ] },
+        { "ref": 12, "name": "Soho, Benson Road", "nodes": [ 5244863942, 280417281 ] },
+        { "ref": 13, "name": "Winson Green, Outer Circle", "nodes": [ 280417278, 1829108248 ] },
+        { "ref": 14, "name": "Handsworth, Booth Street", "nodes": [ 5244863945, 20984528 ] },
+        { "ref": 15, "name": "The Hawthorns", "nodes": [ 1829143232, 280417275 ] },
+        { "ref": 16, "name": "Kenrick Park", "nodes": [ 8064476296, 280417276 ] },
+        { "ref": 17, "name": "Trinity Way", "nodes": [ 1829143091, 8064476292, 280417273 ] },
+        { "ref": 18, "name": "West Bromwich Central", "nodes": [ 8064476291, 280417271 ] },
+        { "ref": 19, "name": "Lodge Road, West Bromwich Town Hall", "nodes": [ 8064476290, 8064476586, 280417269 ] },
+        { "ref": 20, "name": "Dartmouth Street", "nodes": [ 8064476391, 4891144322, 280417268 ] },
+        { "ref": 21, "name": "Dudley Street, Guns Village", "nodes": [ 1829143044, 8064476295, 280417267 ] },
+        { "ref": 22, "name": "Black Lake", "nodes": [ 8064476289, 8064476585, 280417266 ] },
+        { "ref": 23, "name": "Wednesbury, Great Western Street", "nodes": [ 280417262, 8064476288, 8064476485 ] },
+        { "ref": 24, "name": "Wednesbury Parkway", "nodes": [ 8064476386, 8064476287, 280156260 ] },
+        { "ref": 25, "name": "Bradley Lane", "nodes": [ 4099974348, 8064476385, 249663901 ] },
+        { "ref": 26, "name": "Loxdale", "nodes": [ 4100046723, 8064476297, 2731786423 ] },
+        { "ref": 27, "name": "Bilston Central", "nodes": [ 8064476286, 251064972, 1827884127 ] },
+        { "ref": 28, "name": "The Crescent", "nodes": [ 8064476285, 260114060, 1780524952 ] },
+        { "ref": 29, "name": "Priestfield", "nodes": [ 8064476389, 280417283, 8064476588 ] },
+        { "ref": 30, "name": "The Royal", "nodes": [ 1829957703, 247763046, 1780524782 ] },
+        { "ref": 31, "name": "Pipers Row", "nodes": [ 11193824565, 11193824566, 1780524952 ] },
+        { "ref": 32, "name": "Wolverhampton Station", "nodes": [ 11193824562, 260114060, 1780524952 ] }
     ],
 
     "legs": [
         {
+            "ref": 1,
             "name": "Edgbaston Village - Five Ways",
             "ways": [ 1318524830, 695835581, 375125198, 1083783324, 695835580, 1318524832, 1083783325, 1083783326, 1208255913, 1208255912 ],
             "partialWays": [
@@ -46,6 +47,7 @@
             ]
         },
         {
+            "ref": 2,
             "name": "Five Ways - Brindley Place",
             "partialWays": [
                 { "osmWayId": 983895526, "fromNodeId": 9097748899, "toNodeId": 9097748901 },
@@ -53,6 +55,7 @@
             ]
         },
         {
+            "ref": 3,
             "name": "Brindley Place - Library",
             "ways": [ 1002009371, 983895518, 1354628521, 983895517, 1002009372, 983895516, 983895525 ],
             "partialWays": [
@@ -63,6 +66,7 @@
             ]
         },
         {
+            "ref": 4,
             "name": "Library - Town Hall",
             "ways": [ 746999958, 746999957 ],
             "partialWays": [
@@ -72,6 +76,7 @@
             ]
         },
         {
+            "ref": 5,
             "name": "Town Hall - Grand Central",
             "ways": [ 533145511, 375125196, 843178530, 371903548 ],
             "partialWays": [
@@ -82,6 +87,7 @@
             ]
         },
         {
+            "ref": 6,
             "name": "Grand Central - Corporation Street",
             "partialWays": [
                 { "osmWayId": 378433438, "fromNodeId": 4204911711, "toNodeId": 3464500416 },
@@ -89,6 +95,7 @@
             ]
         },
         {
+            "ref": 7,
             "name": "Corporation Street - Bull Street Delta Junction",
             "partialWays": [
                 { "osmWayId": 378433438, "fromNodeId": 3464500416, "toNodeId": 4204911723 },
@@ -96,6 +103,7 @@
             ]
         },
         {
+            "ref": 8,
             "name": "Corporation Street - Bull Street Chord",
             "partialWays": [
                 { "osmWayId": 378433438, "fromNodeId": 4204911723, "toNodeId": 3464500412 },
@@ -103,6 +111,7 @@
             ]
         },
         {
+            "ref": 9,
             "name": "Bull Street Delta Junction - Bull Street",
             "partialWays": [
                 { "osmWayId": 378433438, "fromNodeId": 3464500412, "toNodeId": 4207929470 },
@@ -110,6 +119,7 @@
             ]
         },
         {
+            "ref": 10,
             "name": "Bull Street - St. Chads",
             "ways": [ 868899004, 384982906 ],
             "partialWays": [
@@ -120,6 +130,7 @@
             ]
         },
         {
+            "ref": 11,
             "name": "St. Chads - St. Paul's",
             "partialWays": [
                 { "osmWayId": 420901031, "fromNodeId": 4207951090, "toNodeId": 3946422785 },
@@ -129,6 +140,7 @@
             ]
         },
         {
+            "ref": 12,
             "name": "St. Paul's - Jewellery Quarter",
             "ways": [ 171828492, 171828490, 171828567, 171828639, 171828705, 171828711, 74279348, 74279352, 18108427, 31545006, 31545005, 31543574 ],
             "partialWays": [
@@ -138,6 +150,7 @@
             ]
         },
         {
+            "ref": 13,
             "name": "Jewellery Quarter - Soho, Benson Road",
             "ways": [ 171829130, 171829132, 171830071, 23050667, 23362568, 23362577, 23362579, 23362572, 85229849 ],
             "partialWays": [
@@ -147,6 +160,7 @@
             ]
         },
         {
+            "ref": 14,
             "name": "Soho, Benson Road - Winson Green, Outer Circle",
             "ways": [ 171953512, 28067608 ],
             "partialWays": [
@@ -157,6 +171,7 @@
             ]
         },
         {
+            "ref": 15,
             "name": "Winson Green, Outer Circle - Handsworth, Booth Street",
             "ways": [ 171953589, 171954040, 174677048, 174677052, 171954146, 27854455, 27854456, 174677060, 27854458 ],
             "partialWays": [
@@ -167,6 +182,7 @@
             ]
         },
         {
+            "ref": 16,
             "name": "Handsworth, Booth Street - The Hawthorns",
             "partialWays": [
                 { "osmWayId": 171957163, "fromNodeId": 5244863945, "toNodeId": 1829143232 },
@@ -174,6 +190,7 @@
             ]
         },
         {
+            "ref": 17,
             "name": "The Hawthorns - Kenrick Park",
             "partialWays": [
                 { "osmWayId": 171957163, "fromNodeId": 1829143232, "toNodeId": 8064476296 },
@@ -181,6 +198,7 @@
             ]
         },
         {
+            "ref": 18,
             "name": "Kenrick Park - Trinity Way",
             "partialWays": [
                 { "osmWayId": 171957163, "fromNodeId": 8064476296, "toNodeId": 1829143091 },
@@ -188,6 +206,7 @@
             ]
         },
         {
+            "ref": 19,
             "name": "Trinity Way - West Bromwich Central",
             "ways": [ 1331689608 ],
             "partialWays": [
@@ -196,6 +215,7 @@
             ]
         },
         {
+            "ref": 20,
             "name": "West Bromwich Central - Lodge Road, West Bromwich Town Hall",
             "partialWays": [
                 { "osmWayId": 171957163, "fromNodeId": 8064476291, "toNodeId": 8064476290 },
@@ -203,6 +223,7 @@
             ]
         },
         {
+            "ref": 21,
             "name": "Lodge Road, West Bromwich Town Hall - Dartmouth Street",
             "partialWays": [
                 { "osmWayId": 171957163, "fromNodeId": 8064476290, "toNodeId": 4891144322 },
@@ -210,6 +231,7 @@
             ]
         },
         {
+            "ref": 22,
             "name": "Dartmouth Street - Dudley Street, Guns Village",
             "partialWays": [
                 { "osmWayId": 171957163, "fromNodeId": 4891144322, "toNodeId": 1829143044 },
@@ -217,6 +239,7 @@
             ]
         },
         {
+            "ref": 23,
             "name": "Dudley Street, Guns Village - Black Lane",
             "ways": [ 171957880, 148028944, 148028945 ],
             "partialWays": [
@@ -226,6 +249,7 @@
             ]
         },
         {
+            "ref": 24,
             "name": "Black Lane - Wednesbury Delta Junction",
             "ways": [ 171958086, 171958155, 171958214, 171958212, 171958213, 171958351, 171958432, 171958431, 171958437, 148029251, 148029260, 148029253, 148029254, 148029255, 148029259, 148029252, 148029256, 148029258 ],
             "partialWays": [
@@ -236,6 +260,7 @@
             ]
         },
         {
+            "ref": 25,
             "name": "Black Lane - Wednesbury Chord",
             "ways": [ 171958506, 903850820, 903850823, 1298145582, 148029257 ],
             "partialWays": [
@@ -245,6 +270,7 @@
             ]
         },
         {
+            "ref": 26,
             "name": "Wednesbury Delta Junction - Wednesbury, Great Western Street",
             "ways": [ 903850822, 148028943 ],
             "partialWays": [
@@ -253,6 +279,7 @@
             ]
         },
         {
+            "ref": 27,
             "name": "Wednesbury, Great Western Street - Wednesbury Parkway",
             "ways": [ 171958808, 171958809, 171958817, 171959663, 171959662, 148029261, 148030488, 171958807, 171958818 ],
             "partialWays": [
@@ -262,6 +289,7 @@
             ]
         },
         {
+            "ref": 28,
             "name": "Wednesbury Parkway - Bradley Lane",
             "ways": [ 171959789, 171959818, 172046675, 172046673, 172046672, 172046676, 172046901, 172046902, 25790284, 25790285, 136631722, 172046674, 172046671, 136631723, 45087741 ],
             "partialWays": [
@@ -272,6 +300,7 @@
             ]
         },
         {
+            "ref": 29,
             "name": "Bradley Lane - Loxdale",
             "partialWays": [
                 { "osmWayId": 172047233, "fromNodeId": 4099974348, "toNodeId": 4100046723 },
@@ -279,6 +308,7 @@
             ]
         },
         {
+            "ref": 30,
             "name": "Loxdale - Bilston Central",
             "ways": [ 172047255, 23219526 ],
             "partialWays": [
@@ -289,6 +319,7 @@
             ]
         },
         {
+            "ref": 31,
             "name": "Bilston Central - The Crescent",
             "partialWays": [
                 { "osmWayId": 172047657, "fromNodeId": 8064476286, "toNodeId": 8064476285 },
@@ -296,6 +327,7 @@
             ]
         },
         {
+            "ref": 32,
             "name": "The Crescent - Priestfield",
             "partialWays": [
                 { "osmWayId": 172047657, "fromNodeId": 8064476285, "toNodeId": 8064476389 },
@@ -303,6 +335,7 @@
             ]
         },
         {
+            "ref": 33,
             "name": "Priestfield - The Royal",
             "ways": [ 909945943, 61012266, 172048650, 172048648, 909945944, 172048651 ],
             "partialWays": [
@@ -313,6 +346,7 @@
             ]
         },
         {
+            "ref": 34,
             "name": "The Royal - Pipers Row",
             "ways": [ 172049407, 22983070, 1318524834, 172052347, 1318524829 ],
             "partialWays": [
@@ -323,6 +357,7 @@
             ]
         },
         {
+            "ref": 35,
             "name": "Pipers Row - Wolverhampton Station",
             "ways": [ 1208060537, 1208060536, 1318524828, 1208060539, 1208060538 ],
             "partialWays": [
@@ -333,55 +368,62 @@
     ],
 
     "stockClasses": [
-        { "name": "CAF Urbos 3" }
+        { "ref": 1, "name": "CAF Urbos 3" }
     ],
 
     "operators": [
         {
             "name": "West Midlands Metro",
             "stock": [
-                { "stockClass": "CAF Urbos 3", "unitNumber": 17 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 18 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 19 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 20 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 21 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 22 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 23 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 24 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 25 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 26 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 27 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 28 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 29 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 30 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 31 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 32 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 33 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 34 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 35 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 36 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 37 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 38 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 39 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 40 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 41 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 42 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 43 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 44 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 45 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 46 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 47 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 48 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 49 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 50 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 51 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 52 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 53 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 54 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 55 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 56 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 57 },
-                { "stockClass": "CAF Urbos 3", "unitNumber": 58 }
+                { "stockClassRef": 1, "unitNumber": 17 },
+                { "stockClassRef": 1, "unitNumber": 18 },
+                { "stockClassRef": 1, "unitNumber": 19 },
+                { "stockClassRef": 1, "unitNumber": 20 },
+                { "stockClassRef": 1, "unitNumber": 21 },
+                { "stockClassRef": 1, "unitNumber": 22 },
+                { "stockClassRef": 1, "unitNumber": 23 },
+                { "stockClassRef": 1, "unitNumber": 24 },
+                { "stockClassRef": 1, "unitNumber": 25 },
+                { "stockClassRef": 1, "unitNumber": 26 },
+                { "stockClassRef": 1, "unitNumber": 27 },
+                { "stockClassRef": 1, "unitNumber": 28 },
+                { "stockClassRef": 1, "unitNumber": 29 },
+                { "stockClassRef": 1, "unitNumber": 30 },
+                { "stockClassRef": 1, "unitNumber": 31 },
+                { "stockClassRef": 1, "unitNumber": 32 },
+                { "stockClassRef": 1, "unitNumber": 33 },
+                { "stockClassRef": 1, "unitNumber": 34 },
+                { "stockClassRef": 1, "unitNumber": 35 },
+                { "stockClassRef": 1, "unitNumber": 36 },
+                { "stockClassRef": 1, "unitNumber": 37 },
+                { "stockClassRef": 1, "unitNumber": 38 },
+                { "stockClassRef": 1, "unitNumber": 39 },
+                { "stockClassRef": 1, "unitNumber": 40 },
+                { "stockClassRef": 1, "unitNumber": 41 },
+                { "stockClassRef": 1, "unitNumber": 42 },
+                { "stockClassRef": 1, "unitNumber": 43 },
+                { "stockClassRef": 1, "unitNumber": 44 },
+                { "stockClassRef": 1, "unitNumber": 45 },
+                { "stockClassRef": 1, "unitNumber": 46 },
+                { "stockClassRef": 1, "unitNumber": 47 },
+                { "stockClassRef": 1, "unitNumber": 48 },
+                { "stockClassRef": 1, "unitNumber": 49 },
+                { "stockClassRef": 1, "unitNumber": 50 },
+                { "stockClassRef": 1, "unitNumber": 51 },
+                { "stockClassRef": 1, "unitNumber": 52 },
+                { "stockClassRef": 1, "unitNumber": 53 },
+                { "stockClassRef": 1, "unitNumber": 54 },
+                { "stockClassRef": 1, "unitNumber": 55 },
+                { "stockClassRef": 1, "unitNumber": 56 },
+                { "stockClassRef": 1, "unitNumber": 57 },
+                { "stockClassRef": 1, "unitNumber": 58 }
+            ],
+            "routes": [
+                {
+                    "name": "West Midlands Metro",
+                    "stationRefs": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 ],
+                    "legRefs": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35 ]
+                }
             ]
         }
     ]

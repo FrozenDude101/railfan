@@ -10,10 +10,12 @@ class StationNodeTestData:
     osmNodeId: int
 
 class StationTestData:
+    ref: int
     name: str
     nodes: list[StationNodeTestData]
 
-    def __init__(self, name: str, nodes: list[int]) -> None:
+    def __init__(self, ref: int, name: str, nodes: list[int]) -> None:
+        self.ref = ref
         self.name = name
         self.nodes = [ StationNodeTestData(osmNodeId = node) for node in nodes ]
 
@@ -28,31 +30,42 @@ class LegPartialWayTestData:
     toNodeId: int
 
 class LegTestData:
+    ref: int
     name: str
     ways: list[LegWayTestData]
     partialWays: list[LegPartialWayTestData]
 
-    def __init__(self, name: str, ways: list[int] = [], partialWays: Json = []) -> None:
+    def __init__(self, ref: int, name: str, ways: list[int] = [], partialWays: Json = []) -> None:
+        self.ref = ref
         self.name = name
         self.ways = [ LegWayTestData(osmWayId = way) for way in ways ]
         self.partialWays = [ LegPartialWayTestData(**partialWay) for partialWay in partialWays ]
 
 @dataclass
 class StockClass:
+    ref: int
     name: str
 
 @dataclass
 class Stock:
     unitNumber: int
-    stockClass: str
+    stockClassRef: int
+
+@dataclass
+class Route:
+    name: str
+    stationRefs: list[int]
+    legRefs: list[int]
 
 class Operator:
     name: str
     stock: list[Stock]
+    routes: list[Route]
 
-    def __init__(self, name: str, stock: Json) -> None:
+    def __init__(self, name: str, stock: Json, routes: Json) -> None:
         self.name = name
         self.stock = [ Stock(**stockItem) for stockItem in stock ]
+        self.routes = [ Route(**route) for route in routes ]
 
 class TestData:
     stations: list[StationTestData]

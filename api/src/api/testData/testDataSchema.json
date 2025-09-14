@@ -8,8 +8,11 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "required": [ "name", "nodes" ],
+                "required": [ "ref", "name", "nodes" ],
                 "properties": {
+                    "ref": {
+                        "type": "integer"
+                    },
                     "name": {
                         "type": "string"
                     },
@@ -28,8 +31,11 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "required": [ "name" ],
+                "required": [ "ref", "name" ],
                 "properties": {
+                    "ref": {
+                        "type": "integer"
+                    },
                     "name": {
                         "type": "string"
                     },
@@ -69,8 +75,11 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "required": [ "name" ],
+                "required": [ "ref", "name" ],
                 "properties": {
+                    "ref": {
+                        "type": "integer"
+                    },
                     "name": {
                         "type": "string"
                     }
@@ -82,7 +91,7 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "required": [ "name", "stock" ],
+                "required": [ "name", "stock", "routes" ],
                 "properties": {
                     "name": {
                         "type": "string"
@@ -90,14 +99,39 @@
                     "stock": {
                         "type": "array",
                         "items": {
-                            "required": [ "stockClass", "unitNumber" ],
+                            "type": "object",
+                            "required": [ "stockClassRef", "unitNumber" ],
                             "properties": {
-                                "stockClass": {
-                                    "type": "string"
+                                "stockClassRef": {
+                                    "type": "integer"
                                 },
                                 "unitNumber": {
                                     "type": "integer",
                                     "minimum": 0
+                                }
+                            }
+                        }
+                    },
+                    "routes": {
+                        "type": "array",
+                        "items": {                
+                            "type": "object",
+                            "required": [ "name", "stationRefs", "legRefs" ],
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "stationRefs": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "legRefs": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "integer"
+                                    }
                                 }
                             }
                         }

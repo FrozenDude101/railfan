@@ -1,6 +1,6 @@
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    from api.db.models import Stock
+    from api.db.models import Stock, Route
 
 from sqlmodel import Field, Relationship, SQLModel
 from uuid import UUID, uuid4
@@ -11,3 +11,4 @@ class Operator(SQLModel, table = True):
     name: str
 
     stock: list["Stock"] = Relationship(back_populates = "operator")
+    routes: list["Route"] = Relationship(back_populates = "operator")
