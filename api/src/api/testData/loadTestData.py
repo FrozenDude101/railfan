@@ -21,7 +21,7 @@ def loadTestData(engine: Engine) -> None:
                 session.add(StationNode(osmNodeId = nodeData.osmNodeId, stationId = station.id))
 
         for legData in testData.legs:
-            leg = Leg()
+            leg = Leg(name = legData.name)
             session.add(leg)
 
             for wayData in legData.ways:

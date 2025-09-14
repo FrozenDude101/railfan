@@ -7,11 +7,38 @@
         { "name": "Brindley Place", "nodes": [ 3785139604, 12350891476, 9097748901 ] },
         { "name": "Library", "nodes": [ 11036222711, 6990613929, 6990613930 ] },
         { "name": "Town Hall", "nodes": [ 11036222712, 8064476589, 6957345553 ] },
-        { "name": "Grand Central", "nodes": [ 4204911706, 3616332640, 11036222713 ] }
+        { "name": "Grand Central", "nodes": [ 4204911706, 3616332640, 11036222713 ] },
+        { "name": "Corporation Street", "nodes": [ 3464500416, 4216185185 ] },
+        { "name": "Bull Street", "nodes": [ 11036222714, 4207929470, 4207929471 ] },
+        { "name": "St. Chads", "nodes": [ 4207951089, 4207951090, 11036222715 ] },
+        { "name": "St. Paul's", "nodes": [ 4653096476, 246561591 ] },
+        { "name": "Jewellery Quarter", "nodes": [ 187104817, 1828015273 ] },
+        { "name": "Soho, Benson Road", "nodes": [ 5244863942, 280417281 ] },
+        { "name": "Winson Green, Outer Circle", "nodes": [ 280417278, 1829108248 ] },
+        { "name": "Handsworth, Booth Street", "nodes": [ 5244863945, 20984528 ] },
+        { "name": "The Hawthorns", "nodes": [ 1829143232, 280417275 ] },
+        { "name": "Kenrick Park", "nodes": [ 8064476296, 280417276 ] },
+        { "name": "Trinity Way", "nodes": [ 1829143091, 8064476292, 280417273 ] },
+        { "name": "West Bromwich Central", "nodes": [ 8064476291, 280417271 ] },
+        { "name": "Lodge Road, West Bromwich Town Hall", "nodes": [ 8064476290, 8064476586, 280417269 ] },
+        { "name": "Dartmouth Street", "nodes": [ 8064476391, 4891144322, 280417268 ] },
+        { "name": "Dudley Street, Guns Village", "nodes": [ 1829143044, 8064476295, 280417267 ] },
+        { "name": "Black Lake", "nodes": [ 8064476289, 8064476585, 280417266 ] },
+        { "name": "Wednesbury, Great Western Street", "nodes": [ 280417262, 8064476288, 8064476485 ] },
+        { "name": "Wednesbury Parkway", "nodes": [ 8064476386, 8064476287, 280156260 ] },
+        { "name": "Bradley Lane", "nodes": [ 4099974348, 8064476385, 249663901 ] },
+        { "name": "Loxdale", "nodes": [ 4100046723, 8064476297, 2731786423 ] },
+        { "name": "Bilston Central", "nodes": [ 8064476286, 251064972, 1827884127 ] },
+        { "name": "The Crescent", "nodes": [ 8064476285, 260114060, 1780524952 ] },
+        { "name": "Priestfield", "nodes": [ 8064476389, 280417283, 8064476588 ] },
+        { "name": "The Royal", "nodes": [ 1829957703, 247763046, 1780524782 ] },
+        { "name": "Pipers Row", "nodes": [ 11193824565, 11193824566, 1780524952 ] },
+        { "name": "Wolverhampton Station", "nodes": [ 11193824562, 260114060, 1780524952 ] }
     ],
 
     "legs": [
         {
+            "name": "Edgbaston Village - Five Ways",
             "ways": [ 1318524830, 695835581, 375125198, 1083783324, 695835580, 1318524832, 1083783325, 1083783326, 1208255913, 1208255912 ],
             "partialWays": [
                 { "osmWayId": 983895524, "fromNodeId": 9097748900, "toNodeId": 9097769232 },
@@ -19,12 +46,14 @@
             ]
         },
         {
+            "name": "Five Ways - Brindley Place",
             "partialWays": [
                 { "osmWayId": 983895526, "fromNodeId": 9097748899, "toNodeId": 9097748901 },
                 { "osmWayId": 983895526, "fromNodeId": 3785139604, "toNodeId": 9097748900 }
             ]
         },
         {
+            "name": "Brindley Place - Library",
             "ways": [ 1002009371, 983895518, 1354628521, 983895517, 1002009372, 983895516, 983895525 ],
             "partialWays": [
                 { "osmWayId": 983895526, "fromNodeId": 9097748901, "toNodeId": 9097769261 },
@@ -34,6 +63,7 @@
             ]
         },
         {
+            "name": "Library - Town Hall",
             "ways": [ 746999958, 746999957 ],
             "partialWays": [
                 { "osmWayId": 743274331, "fromNodeId": 6990613930, "toNodeId": 6957345553 },
@@ -42,12 +72,262 @@
             ]
         },
         {
-            "ways": [ 533145511, 375125196, 843178530 ],
+            "name": "Town Hall - Grand Central",
+            "ways": [ 533145511, 375125196, 843178530, 371903548 ],
             "partialWays": [
                 { "osmWayId": 844349473, "fromNodeId": 3785139569, "toNodeId": 8064476589 },
                 { "osmWayId": 384805841, "fromNodeId": 3616332640, "toNodeId": 3785138752 },
                 { "osmWayId": 743274331, "fromNodeId": 6957345553, "toNodeId": 6957345555 },
                 { "osmWayId": 378433438, "fromNodeId": 3754517409, "toNodeId": 4204911706 }
+            ]
+        },
+        {
+            "name": "Grand Central - Corporation Street",
+            "partialWays": [
+                { "osmWayId": 378433438, "fromNodeId": 4204911711, "toNodeId": 3464500416 },
+                { "osmWayId": 384805841, "fromNodeId": 4216185185, "toNodeId": 3616332640 }
+            ]
+        },
+        {
+            "name": "Corporation Street - Bull Street Delta Junction",
+            "partialWays": [
+                { "osmWayId": 378433438, "fromNodeId": 3464500416, "toNodeId": 4204911723 },
+                { "osmWayId": 384805841, "fromNodeId": 7471288343, "toNodeId": 4216185185 }
+            ]
+        },
+        {
+            "name": "Corporation Street - Bull Street Chord",
+            "partialWays": [
+                { "osmWayId": 378433438, "fromNodeId": 4204911723, "toNodeId": 3464500412 },
+                { "osmWayId": 384805841, "fromNodeId": 4710048694, "toNodeId": 7471288343 }
+            ]
+        },
+        {
+            "name": "Bull Street Delta Junction - Bull Street",
+            "partialWays": [
+                { "osmWayId": 378433438, "fromNodeId": 3464500412, "toNodeId": 4207929470 },
+                { "osmWayId": 384805841, "fromNodeId": 4207929471, "toNodeId": 4710048694 }
+            ]
+        },
+        {
+            "name": "Bull Street - St. Chads",
+            "ways": [ 868899004, 384982906 ],
+            "partialWays": [
+                { "osmWayId": 378433438, "fromNodeId": 4207929470, "toNodeId": 6863876843 },
+                { "osmWayId": 384805841, "fromNodeId": 4207929471, "toNodeId": 3946422786 },
+                { "osmWayId": 420901031, "fromNodeId": 3946422784, "toNodeId": 4207951090 },
+                { "osmWayId": 420901030, "fromNodeId": 3946422786, "toNodeId": 4207951089 }
+            ]
+        },
+        {
+            "name": "St. Chads - St. Paul's",
+            "partialWays": [
+                { "osmWayId": 420901031, "fromNodeId": 4207951090, "toNodeId": 3946422785 },
+                { "osmWayId": 420901030, "fromNodeId": 4207951089, "toNodeId": 2107829849 },
+                { "osmWayId": 420901032, "fromNodeId": 3946422785, "toNodeId": 4653096476 },
+                { "osmWayId": 391419272, "fromNodeId": 2107829849, "toNodeId": 246561591 }
+            ]
+        },
+        {
+            "name": "St. Paul's - Jewellery Quarter",
+            "ways": [ 171828492, 171828490, 171828567, 171828639, 171828705, 171828711, 74279348, 74279352, 18108427, 31545006, 31545005, 31543574 ],
+            "partialWays": [
+                { "osmWayId": 420901032, "fromNodeId": 4653096476, "toNodeId": 1828009647 },
+                { "osmWayId": 391419272, "fromNodeId": 246561591, "toNodeId": 270929915 },
+                { "osmWayId": 171828854, "fromNodeId": 1828012763, "toNodeId": 1828015273 }
+            ]
+        },
+        {
+            "name": "Jewellery Quarter - Soho, Benson Road",
+            "ways": [ 171829130, 171829132, 171830071, 23050667, 23362568, 23362577, 23362579, 23362572, 85229849 ],
+            "partialWays": [
+                { "osmWayId": 171828854, "fromNodeId": 1828015273, "toNodeId": 1828016197 },
+                { "osmWayId": 171953513, "fromNodeId": 1828029654, "toNodeId": 5244863942 },
+                { "osmWayId": 85229886, "fromNodeId": 308199654, "toNodeId": 280417281 }
+            ]
+        },
+        {
+            "name": "Soho, Benson Road - Winson Green, Outer Circle",
+            "ways": [ 171953512, 28067608 ],
+            "partialWays": [
+                { "osmWayId": 171953513, "fromNodeId": 5244863942, "toNodeId": 5244863942 },
+                { "osmWayId": 85229886, "fromNodeId": 280417281, "toNodeId": 308199654 },
+                { "osmWayId": 171953549, "fromNodeId": 1829108083, "toNodeId": 1829108248 },
+                { "osmWayId": 28067609, "fromNodeId": 305810599, "toNodeId": 280417278 }
+            ]
+        },
+        {
+            "name": "Winson Green, Outer Circle - Handsworth, Booth Street",
+            "ways": [ 171953589, 171954040, 174677048, 174677052, 171954146, 27854455, 27854456, 174677060, 27854458 ],
+            "partialWays": [
+                { "osmWayId": 171953549, "fromNodeId": 1829108248, "toNodeId": 305810599 },
+                { "osmWayId": 28067609, "fromNodeId": 280417278, "toNodeId": 1829108715 },
+                { "osmWayId": 171957163, "fromNodeId": 1829114905, "toNodeId": 5244863945 },
+                { "osmWayId": 27854459, "fromNodeId": 305810628, "toNodeId": 20984528 }
+            ]
+        },
+        {
+            "name": "Handsworth, Booth Street - The Hawthorns",
+            "partialWays": [
+                { "osmWayId": 171957163, "fromNodeId": 5244863945, "toNodeId": 1829143232 },
+                { "osmWayId": 27854459, "fromNodeId": 20984528, "toNodeId": 280417275 }
+            ]
+        },
+        {
+            "name": "The Hawthorns - Kenrick Park",
+            "partialWays": [
+                { "osmWayId": 171957163, "fromNodeId": 1829143232, "toNodeId": 8064476296 },
+                { "osmWayId": 27854459, "fromNodeId": 280417275, "toNodeId": 280417276 }
+            ]
+        },
+        {
+            "name": "Kenrick Park - Trinity Way",
+            "partialWays": [
+                { "osmWayId": 171957163, "fromNodeId": 8064476296, "toNodeId": 1829143091 },
+                { "osmWayId": 27854459, "fromNodeId": 280417276, "toNodeId": 280417273 }
+            ]
+        },
+        {
+            "name": "Trinity Way - West Bromwich Central",
+            "ways": [ 1331689608 ],
+            "partialWays": [
+                { "osmWayId": 171957163, "fromNodeId": 1829143091, "toNodeId": 8064476291 },
+                { "osmWayId": 27854459, "fromNodeId": 280417273, "toNodeId": 280417271 }
+            ]
+        },
+        {
+            "name": "West Bromwich Central - Lodge Road, West Bromwich Town Hall",
+            "partialWays": [
+                { "osmWayId": 171957163, "fromNodeId": 8064476291, "toNodeId": 8064476290 },
+                { "osmWayId": 27854459, "fromNodeId": 280417271, "toNodeId": 280417269 }
+            ]
+        },
+        {
+            "name": "Lodge Road, West Bromwich Town Hall - Dartmouth Street",
+            "partialWays": [
+                { "osmWayId": 171957163, "fromNodeId": 8064476290, "toNodeId": 4891144322 },
+                { "osmWayId": 27854459, "fromNodeId": 280417269, "toNodeId": 280417268 }
+            ]
+        },
+        {
+            "name": "Dartmouth Street - Dudley Street, Guns Village",
+            "partialWays": [
+                { "osmWayId": 171957163, "fromNodeId": 4891144322, "toNodeId": 1829143044 },
+                { "osmWayId": 27854459, "fromNodeId": 280417268, "toNodeId": 280417267 }
+            ]
+        },
+        {
+            "name": "Dudley Street, Guns Village - Black Lane",
+            "ways": [ 171957880, 148028944, 148028945 ],
+            "partialWays": [
+                { "osmWayId": 171957163, "fromNodeId": 1829143044, "toNodeId": 1829143136 },
+                { "osmWayId": 171958036, "fromNodeId": 1829151510, "toNodeId": 8064476289 },
+                { "osmWayId": 148029249, "fromNodeId": 1611406157, "toNodeId": 280417266 }
+            ]
+        },
+        {
+            "name": "Black Lane - Wednesbury Delta Junction",
+            "ways": [ 171958086, 171958155, 171958214, 171958212, 171958213, 171958351, 171958432, 171958431, 171958437, 148029251, 148029260, 148029253, 148029254, 148029255, 148029259, 148029252, 148029256, 148029258 ],
+            "partialWays": [
+                { "osmWayId": 171958036, "fromNodeId": 8064476289, "toNodeId": 1829152912 },
+                { "osmWayId": 148029249, "fromNodeId": 280417266, "toNodeId": 249663888 },
+                { "osmWayId": 171958480, "fromNodeId": 1829156343, "toNodeId": 12026350732 },
+                { "osmWayId": 148029262, "fromNodeId": 1611414965, "toNodeId": 1827866688 }
+            ]
+        },
+        {
+            "name": "Black Lane - Wednesbury Chord",
+            "ways": [ 171958506, 903850820, 903850823, 1298145582, 148029257 ],
+            "partialWays": [
+                { "osmWayId": 171958480, "fromNodeId": 12026350732, "toNodeId": 1829156644 },
+                { "osmWayId": 148029262, "fromNodeId": 1827866688, "toNodeId": 1611414991 },
+                { "osmWayId": 903850821, "fromNodeId": 1611414995, "toNodeId": 12026350725 }
+            ]
+        },
+        {
+            "name": "Wednesbury Delta Junction - Wednesbury, Great Western Street",
+            "ways": [ 903850822, 148028943 ],
+            "partialWays": [
+                { "osmWayId": 903850821, "fromNodeId": 12026350725, "toNodeId": 8394372254 },
+                { "osmWayId": 171958617, "fromNodeId": 8394372253, "toNodeId": 8064476288 }
+            ]
+        },
+        {
+            "name": "Wednesbury, Great Western Street - Wednesbury Parkway",
+            "ways": [ 171958808, 171958809, 171958817, 171959663, 171959662, 148029261, 148030488, 171958807, 171958818 ],
+            "partialWays": [
+                { "osmWayId": 171958617, "fromNodeId": 8064476288, "toNodeId": 1829157906 },
+                { "osmWayId": 171959701, "fromNodeId": 1829160524, "toNodeId": 8064476386 },
+                { "osmWayId": 148030485, "fromNodeId": 1611431117, "toNodeId": 280156260 }
+            ]
+        },
+        {
+            "name": "Wednesbury Parkway - Bradley Lane",
+            "ways": [ 171959789, 171959818, 172046675, 172046673, 172046672, 172046676, 172046901, 172046902, 25790284, 25790285, 136631722, 172046674, 172046671, 136631723, 45087741 ],
+            "partialWays": [
+                { "osmWayId": 171959701, "fromNodeId": 8064476386, "toNodeId": 1829168480 },
+                { "osmWayId": 148030485, "fromNodeId": 280156260, "toNodeId": 281292925 },
+                { "osmWayId": 172047233, "fromNodeId": 1829937644, "toNodeId": 4099974348 },
+                { "osmWayId": 45087740, "fromNodeId": 571662825, "toNodeId": 249663901 }
+            ]
+        },
+        {
+            "name": "Bradley Lane - Loxdale",
+            "partialWays": [
+                { "osmWayId": 172047233, "fromNodeId": 4099974348, "toNodeId": 4100046723 },
+                { "osmWayId": 45087740, "fromNodeId": 249663901, "toNodeId": 2731786423 }
+            ]
+        },
+        {
+            "name": "Loxdale - Bilston Central",
+            "ways": [ 172047255, 23219526 ],
+            "partialWays": [
+                { "osmWayId": 172047233, "fromNodeId": 4100046723, "toNodeId": 1829940926 },
+                { "osmWayId": 45087740, "fromNodeId": 2731786423, "toNodeId": 251161494 },
+                { "osmWayId": 172047657, "fromNodeId": 1829941100, "toNodeId": 8064476286 },
+                { "osmWayId": 172048649, "fromNodeId": 251161493, "toNodeId": 1780524743 }
+            ]
+        },
+        {
+            "name": "Bilston Central - The Crescent",
+            "partialWays": [
+                { "osmWayId": 172047657, "fromNodeId": 8064476286, "toNodeId": 8064476285 },
+                { "osmWayId": 172048649, "fromNodeId": 1780524743, "toNodeId": 1827884127 }
+            ]
+        },
+        {
+            "name": "The Crescent - Priestfield",
+            "partialWays": [
+                { "osmWayId": 172047657, "fromNodeId": 8064476285, "toNodeId": 8064476389 },
+                { "osmWayId": 172048649, "fromNodeId": 1827884127, "toNodeId": 8449033830 }
+            ]
+        },
+        {
+            "name": "Priestfield - The Royal",
+            "ways": [ 909945943, 61012266, 172048650, 172048648, 909945944, 172048651 ],
+            "partialWays": [
+                { "osmWayId": 172047657, "fromNodeId": 8064476389, "toNodeId": 1829946181 },
+                { "osmWayId": 172048649, "fromNodeId": 8449033830, "toNodeId": 1827893376 },
+                { "osmWayId": 172048872, "fromNodeId": 1829955788, "toNodeId": 1829957703 },
+                { "osmWayId": 172052348, "fromNodeId": 1780524904, "toNodeId": 1780524782 }
+            ]
+        },
+        {
+            "name": "The Royal - Pipers Row",
+            "ways": [ 172049407, 22983070, 1318524834, 172052347, 1318524829 ],
+            "partialWays": [
+                { "osmWayId": 172048872, "fromNodeId": 1829957703, "toNodeId": 247763040 },
+                { "osmWayId": 172052348, "fromNodeId": 1780524782, "toNodeId": 1830003205 },
+                { "osmWayId": 612933000, "fromNodeId": 1829959146, "toNodeId": 11193824565 },
+                { "osmWayId": 1151199222, "fromNodeId": 1780524921, "toNodeId": 11193824566 }
+            ]
+        },
+        {
+            "name": "Pipers Row - Wolverhampton Station",
+            "ways": [ 1208060537, 1208060536, 1318524828, 1208060539, 1208060538 ],
+            "partialWays": [
+                { "osmWayId": 612933000, "fromNodeId": 11193824565, "toNodeId": 11193824582 },
+                { "osmWayId": 1151199222, "fromNodeId": 11193824566, "toNodeId": 10709184943 }
             ]
         }
     ],

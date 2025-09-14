@@ -28,10 +28,12 @@ class LegPartialWayTestData:
     toNodeId: int
 
 class LegTestData:
+    name: str
     ways: list[LegWayTestData]
     partialWays: list[LegPartialWayTestData]
 
-    def __init__(self, ways: list[int] = [], partialWays: Json = []) -> None:
+    def __init__(self, name: str, ways: list[int] = [], partialWays: Json = []) -> None:
+        self.name = name
         self.ways = [ LegWayTestData(osmWayId = way) for way in ways ]
         self.partialWays = [ LegPartialWayTestData(**partialWay) for partialWay in partialWays ]
 
