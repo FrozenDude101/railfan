@@ -2,7 +2,7 @@ import json
 from sqlalchemy import Engine
 from sqlmodel import Session
 
-from api.db.models import Station, StationNode, Leg, LegPartialWay, LegWay, StockClass, Stock, Operator, Route, RouteLeg, RouteStation, User, UserJourney
+from api.db.models import * # pyright: ignore[reportWildcardImportFromLibrary]
 from api.testData import TestData
 
 
