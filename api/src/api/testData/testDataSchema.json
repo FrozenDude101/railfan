@@ -140,27 +140,11 @@
             }
         },
 
-        "stockClasses": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "required": [ "ref", "name" ],
-                "properties": {
-                    "ref": {
-                        "type": "integer"
-                    },
-                    "name": {
-                        "type": "string"
-                    }
-                }
-            }
-        },
-
         "users": {
             "type": "array",
             "items": {
                 "type": "object",
-                "required": [ "name" ],
+                "required": [ "displayName" ],
                 "properties": {
                     "displayName": {
                         "type": "string"
